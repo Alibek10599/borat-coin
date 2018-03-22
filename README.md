@@ -1,4 +1,4 @@
-
+![Alt text](https://github.com/andrewnguyen22/artpiece.io/blob/master/src/pictures/screenshot.png "Optional Title")
 
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
