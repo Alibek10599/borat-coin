@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
+@import url('https://fonts.googleapis.com/css?family=Josefin+Slab');
+
+.Content-container {
+    background: #ECECEE;
+    width: 100%;
+    height: 2500px;
+    padding-top: 70px;
+    padding-left: 0;
+    padding-right: 0;
+}
+.Content-section{
+    font-family: 'Josefin Slab', serif;
+    height:300px;
+    width:80%;
+    text-align:center;
+}
+.Content-column1 {
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+.Content-image-container{
+    margin:0;
+    position:fixed;
+    top:70px;
+    width:50%;
+    display:table;
+}
+.Image-container{
+    margin:0;
+    width:100%;
+    display:table-cell;
+    vertical-align:middle;
+    height:100%;
+}
+.Content-image {
+    width: 400px;
+    margin:0 auto;
+    height:700px;
+    background: url("../../pictures/app.gif");
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size:contain;
+}
+
+.Content-column2 {
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+.Content-section-img{
+    margin-bottom:50px;
+    width:80%;
+    height:300px;
+    background-image: url("../../pictures/256px-Ethereum_logo_2014.svg.png");
+    background-position:Center;
+    background-size:contain;
+    background-repeat:no-repeat;
+}
+.Content-column2 a{
+    text-decoration:none;
+    font-size:20px;
+
+}
+@media (max-width:500px){
+}
+@media (max-width:800px){
+    .Content-section{
+        width:100%;
+    }
+    .Content-section-img{
+        width:100%;
+    }
+    .Content-column1{
+        display:none;
+        position:absolute;
+    }
+    .Content-column2{
+        width:100%;
+    }
+}
