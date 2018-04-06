@@ -71,17 +71,17 @@ class Footer extends Component {
                     <div className="innercol">
 
                         <br/>
-                        <a href="https://www.google.com">
-                            Twitter
-                        </a>
-                        <br/><br/>
-                        <a href="https://www.google.com">
-                            Github
-                        </a>
-                        <br/><br/>
-                        <a href="https://www.google.com">
-                            Facebook
-                        </a>
+                        {/*<a href="https://www.google.com">*/}
+                            {/*Twitter*/}
+                        {/*</a>*/}
+                        {/*<br/><br/>*/}
+                        {/*<a href="https://www.google.com">*/}
+                            {/*Github*/}
+                        {/*</a>*/}
+                        {/*<br/><br/>*/}
+                        {/*<a href="https://www.google.com">*/}
+                            {/*Facebook*/}
+                        {/*</a>*/}
                     </div>
                 </div>
             </div>
