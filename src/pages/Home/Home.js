@@ -3,10 +3,13 @@ import './Home.css'
 import Footer from "../../footer/Footer"
 import {Parallax, Background} from 'react-parallax';
 import {SocialIcon} from 'react-social-icons';
+import {Redirect} from 'react-router'
+import history from "../../history/History";
+
 class Header extends Component {
     constructor(props) {
         super(props);
-        this.state = {width: 0, height: 0};
+        this.state = {width: 0, height: 0, redirect: 0};
         this.updateWindowDimensions = this.updateWindowDimensions.bind(this);
     }
 
@@ -23,7 +26,25 @@ class Header extends Component {
         this.setState({width: window.innerWidth, height: window.innerHeight});
     }
 
+    handleOnClick = () => {
+        this.setState({redirect: 1});
+    }
+
     render() {
+        if (this.state.redirect === 1) {
+            this.setState({redirect: 0});
+            history.push('/');
+            return (<Redirect to={{
+                pathname: '/contact'
+            }}/>);
+        }
+        let style;
+        if (this.state.width > 600) {
+            style = {width: this.state.width + "px", height: this.state.height + "px"}
+        }
+        else {
+            style = {width: "100%", height: "600px"};
+        }
         return (
             <div style={{background: "white"}}>
                 <Parallax
@@ -34,16 +55,16 @@ class Header extends Component {
                     bgStyle={{marginTop: "20px"}}
                     strength={200}
                 >
-                    <div style={{width: this.state.width + "px", height: this.state.height + "px"}}>
-                        <div className="Prototypes" style={{height: this.state.height+70 + "px"}}>
+                    <div style={style}>
+                        <div className="Prototypes" style={{height: this.state.height + 70 + "px"}}>
                             <div className="Prototypes-image-container">
                                 <div className="Prototypes-image"/>
                             </div>
                         </div>
                         <div className="Explainer">
-                        <h1>Buy, Sell, And Trade <br />Blockchain Art</h1>
-                        <h2>Redeem Tokens For Piece</h2>
-                            <button>SIGN UP TODAY</button>
+                            <h1>Buy, Sell, And Trade <br/>Blockchain Art</h1>
+                            <h2>Redeem Tokens For Piece</h2>
+                            <button onClick={this.handleOnClick}>SIGN UP TODAY</button>
                         </div>
                     </div>
                 </Parallax>
@@ -55,7 +76,7 @@ class Header extends Component {
 class Sidebar extends Component {
     constructor(props) {
         super(props);
-        this.state = {width: 0, height: 0};
+        this.state = {width: 0, height: 0, redirect: 0};
         this.updateWindowDimensions = this.updateWindowDimensions.bind(this);
     }
 
@@ -98,11 +119,6 @@ class Home extends Component {
     render() {
         return (
             <div>
-                <div className="preload" style={{display: "block"}}>
-                    <div className="parallax1 parallax1-before"/>
-                    <div className="parallax1 parallax2-before"/>
-                    <div className="parallax1 parallax3-before"/>
-                </div>
                 <Sidebar/>
                 <Header/>
                 <Footer/>
