@@ -1,7 +1,31 @@
 import React, {Component} from 'react'
 import './Footer.css'
+import {Redirect} from 'react-router'
+import history from "../history/History";
+import terms from '../pictures/terms.jpg'
+import privacy from '../pictures/privacy.jpg'
 class Footer extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {redirect: 0, destination: '/'};
+    }
+
+    handleOnClick = (string) => {
+        this.setState({redirect: 1, destination: string});
+    }
+
+    openInNewTab = (url) =>{
+        window.open(url, '_blank');
+    }
+
     render() {
+        if (this.state.redirect === 1) {
+            this.setState({redirect: 0});
+            history.push('/');
+            return (<Redirect to={{
+                pathname: this.state.destination
+            }}/>);
+        }
         return (
             <div className="Footer-container">
                 <div className="col col1">
@@ -22,10 +46,10 @@ class Footer extends Component {
                         <p>
                             More:
                         </p>
-                        <p>
+                        <p onClick={() => this.handleOnClick("/about")}>
                             About
                         </p>
-                        <p>
+                        <p onClick={() => this.handleOnClick("/contact")}>
                             Contact
                         </p>
                     </div>
@@ -35,10 +59,10 @@ class Footer extends Component {
                         <p>
                             Terms
                         </p>
-                        <p>
+                        <p onClick={() =>this.openInNewTab(terms)}>
                             Legal
                         </p>
-                        <p>
+                        <p onClick={() =>this.openInNewTab(privacy)}>
                             Privacy
                         </p>
                     </div>
