@@ -119,7 +119,7 @@ class Home extends Component {
     render() {
         return (
             <div>
-                <Sidebar/>
+                {/*<Sidebar/>*/}
                 <Header/>
                 <Footer/>
             </div>
