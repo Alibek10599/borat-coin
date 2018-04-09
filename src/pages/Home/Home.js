@@ -62,8 +62,8 @@ class Header extends Component {
                             </div>
                         </div>
                         <div className="Explainer">
-                            <h1>Buy, Sell, And Trade <br/>Blockchain Art</h1>
-                            <h2>Redeem Tokens For Piece</h2>
+                            <h1>Buy, Sell, and Trade<br/>Collectable Art on the Blockchain.<br/></h1>
+                            <h2>Redeem Tokens For Works of Art</h2>
                             <button onClick={this.handleOnClick}>SIGN UP TODAY</button>
                         </div>
                     </div>
