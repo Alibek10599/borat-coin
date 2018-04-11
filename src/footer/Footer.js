@@ -31,7 +31,7 @@ class Footer extends Component {
                 <div className="col col1">
                     <div className="innercol">
                         <p>
-                            ARTPIECE.IO
+                            ARTPIECE.IO LLC
                         </p>
                         <p>
                             COPYRIGHT © 2018
