@@ -2,8 +2,8 @@ import React, {Component} from 'react'
 import './Contact.css'
 import Footer from "../../footer/Footer"
 import {Parallax, Background} from 'react-parallax';
-var html = "<iframe width=\"540\" height=\"830\" src=\"https://my.sendinblue.com/users/subscribe/js_id/36kax/id/1\" frameborder=\"0\" scrolling=\"no\" allowfullscreen style=\"display: block;margin-left: auto;margin-right: auto;\"></iframe>"
-var htmlMobile = "<iframe width=\"300\" height=\"560\" src=\"https://my.sendinblue.com/users/subscribe/js_id/36kax/id/2\" frameborder=\"0\" scrolling=\"no\" allowfullscreen style=\"display: block;margin-left: auto;margin-right: auto;\"></iframe>"
+var html = "<iframe width=\"540\" height=\"830\" src=\"https://my.sendinblue.com/users/subscribe/js_id/36kax/id/1\" frameborder=\"0\" scrolling=\"yes\" allowfullscreen style=\"display: block;margin-left: auto;margin-right: auto;\"></iframe>"
+var htmlMobile = "<iframe width=\"300\" height=\"560\" src=\"https://my.sendinblue.com/users/subscribe/js_id/36kax/id/2\" frameborder=\"0\" scrolling=\"yes\" allowfullscreen style=\"display: block;margin-left: auto;margin-right: auto;\"></iframe>"
 
 
 class Header extends Component {
