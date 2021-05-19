@@ -1,4 +1,4 @@
-![Alt text](https://github.com/andrewnguyen22/artpiece.io/blob/master/src/pictures/screenshot.png "Optional Title")
+![Alt text](https://github.com/Alibek10599/borat-coin/blob/master/src/pictures/app.png)
 
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
