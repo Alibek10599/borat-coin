@@ -18,17 +18,18 @@ class NavComponent extends Component {
         return (
                 <nav>
                     <div className="navWide">
+                        <i>sah</i>
                         <div className="wideDiv">
                             <Link className="navbar-item" to="/">HOME</Link>
                             <Link className="navbar-item" to="/about">ABOUT</Link>
                             <Link className="navbar-item" to="/contact">CONTACT</Link>
-                            <Link className="navbar-home" to="/">ARTPIECE.IO</Link>
+                            <Link className="navbar-home" to="/">BORATCOIN.COM</Link>
                             <br/>
                         </div>
                     </div>
                     <div className="navNarrow">
                         <i className="fa fa-bars fa-2x" onClick={this.burgerToggle}></i>
-                        <Link className="navbar-home" to="/">ARTPIECE.IO</Link>
+                        <Link className="navbar-home" to="/">BORATCOIN.COM</Link>
                         <br/>
                         <div className="narrowLinks">
                             <Link className="navbar-item" to="/" onClick={this.burgerToggle}>HOME</Link>

@@ -57,6 +57,7 @@ class Contact extends Component {
         return (
             <div>
                 <Header/>
+
                 <Footer/>
             </div>
         );

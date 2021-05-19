@@ -59,7 +59,7 @@ class Content extends Component {
                             programmed without any
                             possibility of downtime, censorship, fraud or third party interference.</h3>
                     </div>
-                    <div style={{backgroundImage: 'url(' + require('./../../pictures/smart_contract.svg') + ')'}}
+                    <div style={{backgroundImage: 'url(' + 'https://i.gifer.com/7P6x.gif' + ')'}}
                          className="Content-section-img"/>
                     <div className="Content-section">
                         <h1>Backed By Smart Contracts</h1>
@@ -78,7 +78,7 @@ class Content extends Component {
                     <div style={{backgroundImage: 'url(' + require('./../../pictures/landing_background.jpg') + ')'}}
                          className="Content-section-img"/>
                     <div className="Content-section">
-                        <h1>Own The Art</h1>
+                        <h1>Own The Borat coin</h1>
                         <h3>Accumulate all of the tokens in a series to redeem for the actual art piece.</h3>
                     </div>
                 </div>

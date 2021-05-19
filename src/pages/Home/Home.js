@@ -46,15 +46,15 @@ class Header extends Component {
             style = {width: "100%", height: "600px"};
         }
         return (
-            <div style={{background: "white"}}>
-                <Parallax
+            <div style={{background: "#FDE887"}}>
+               {/* <Parallax
                     className="header"
                     slowerScrollRate="true"
                     bgImage={require('../../pictures/landing_background.jpg')}
                     bgImageAlt="art"
                     bgStyle={{marginTop: "20px"}}
                     strength={200}
-                >
+                >*/}
                     <div style={style}>
                         <div className="Prototypes" style={{height: this.state.height + 70 + "px"}}>
                             <div className="Prototypes-image-container">
@@ -63,11 +63,11 @@ class Header extends Component {
                         </div>
                         <div className="Explainer">
                             <h1>Buy, Sell, and Trade<br/>Collectable Art on the Blockchain.<br/></h1>
-                            <h2>Redeem Tokens For Works of Art</h2>
+                            <h2>Redeem Borat Coins For Works of Art</h2>
                             <button onClick={this.handleOnClick}>SIGN UP TODAY</button>
                         </div>
                     </div>
-                </Parallax>
+                {/*</Parallax>*/}
             </div>
         );
     }

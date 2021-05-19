@@ -31,10 +31,10 @@ class Footer extends Component {
                 <div className="col col1">
                     <div className="innercol">
                         <p>
-                            ARTPIECE.IO LLC
+                            BORAT COIN LTD
                         </p>
                         <p>
-                            COPYRIGHT © 2018
+                            COPYRIGHT © 2021
                         </p>
                         <p>
                             All Rights Reserved
@@ -71,17 +71,18 @@ class Footer extends Component {
                     <div className="innercol">
 
                         <br/>
-                        {/*<a href="https://www.google.com">*/}
-                            {/*Twitter*/}
-                        {/*</a>*/}
-                        {/*<br/><br/>*/}
-                        {/*<a href="https://www.google.com">*/}
-                            {/*Github*/}
-                        {/*</a>*/}
-                        {/*<br/><br/>*/}
-                        {/*<a href="https://www.google.com">*/}
-                            {/*Facebook*/}
-                        {/*</a>*/}
+                        <a href="https://twitter.com/theboratcoin">
+                            Twitter
+                        </a>
+                        <br/><br/>
+                        <a href="https://www.github.com/Alibek10599">
+                            Github
+                        </a>
+                        <br/><br/>
+                        <i src=""></i>
+                        <a href="http://www.tiktok.com/@boratcoin">
+                            Tik-Tok
+                        </a>
                     </div>
                 </div>
             </div>
